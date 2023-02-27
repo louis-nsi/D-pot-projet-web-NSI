@@ -1,0 +1,365 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+body {
+    position: relative;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color:   #6c996f;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    height: 50px;
+    box-shadow: 0 0 10px rgba(5, 5, 5, 0);
+}
+header .logo {
+    color:  #3C703F;
+    font-size: 25px;
+    font-weight: bold;   
+}
+body {
+    background-color: #ffffff; /* Couleur de fond par défaut */
+    color: #000000; /* Couleur de texte par défaut */
+
+  }
+  
+  body.dark-mode {
+    background-color: #222222; /* Couleur de fond en mode sombre */
+    color: #ffffff; /* Couleur de texte en mode sombre */
+    
+  }
+  
+  #mode-toggle {
+    background-color: #ffffff; /* Couleur de fond du bouton par défaut */
+    color: #000000; /* Couleur de texte du bouton par défaut */
+    border: 1px solid #000000; /* Bordure du bouton par défaut */
+    padding: 10px; /* Espacement interne du bouton */
+    
+  }
+  
+  #mode-toggle.dark-mode {
+    background-color: #222222; /* Couleur de fond du bouton en mode sombre */
+    color: #ffffff; /* Couleur de texte du bouton en mode sombre */
+    border: 1px solid #ffffff; /* Bordure du bouton en mode sombre */
+    
+  }
+  
+header .logo span {
+    color: black;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+.menu li a {
+    font-size: 14px;
+    color: black;
+    font-weight: 300;
+    transition: 0.2s;
+}
+.menu li a:hover {
+    color:  #3C703F;
+}
+header button {
+    background-color:   #3C703F;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px 20px;
+    position: relative;
+    align-items: left;
+    padding: 10px 10px;
+    
+}
+
+/*Scrollbar CSS*/
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb {
+    background-color:   #3C703F;
+}
+
+
+*{box-sizing:border-box}
+
+img{
+
+max-width: 100%;
+
+}
+
+/*pour le saut de page, on cree une class que l'on met en display:none*/
+.target{
+
+display: none
+
+}
+
+
+/* englobe le slider */
+
+.cadre_diapo{
+
+max-width: 700px;
+margin: 2rem auto;
+overflow: hidden;
+	
+	}
+
+.interieur_diapo{
+	
+display: flex;
+width: 420%;
+transition: transform .6s ease-in-out
+	
+	}
+
+.description{
+
+position: relative;
+
+}
+
+.description span{
+
+position: absolute;
+left: 0;
+top: 2%;
+font-size: 75%;
+display: flex;
+padding: .5rem;
+justify-content: center;
+color: white;
+background: hsla(0,0%,0%,.35)
+	
+	}
+	
+	
+#votre_id1:target ~ .cadre_diapo .interieur_diapo{
+
+transform:translatex(0)
+
+}/*image 1*/
+
+#votre_id2:target ~ .cadre_diapo .interieur_diapo{
+
+transform:translatex(-25%)
+
+}/*image 2*/
+
+#votre_id3:target ~ .cadre_diapo .interieur_diapo{
+
+transform:translatex(-50%)
+
+}/*image 3*/
+
+#votre_id4:target ~ .cadre_diapo .interieur_diapo{
+
+transform:translatex(-75%)
+
+}/*image 4*/
+
+
+
+
+
+/*navigation avec images miniatures*/
+.navigation_diapo{
+	
+display: flex; /*permet d'aligner les photos les unes à la suite des autres, on peut aussi utiliser le positionnement absolu*/
+list-style-type: none;
+margin: 0;
+padding: 0
+	
+	}
+
+.navigation_diapo li {
+	
+	padding: .25rem;
+	
+	}
+
+.navigation_diapo img{
+
+border: 3px solid white;
+box-shadow:0 0 5px hsla(0,0%,0%,.4);
+
+	
+	}
+	
+	
+	@media (min-width:31.25rem){
+		
+		.description span{
+			
+			font-size: initial
+		
+		}
+	
+	}
+	
+
+/* style pour la section avec l'image à gauche et la description à droite */
+#main {
+    display: flex;
+    flex-direction: row;
+    padding: 100px;
+    align-items: center;
+}
+
+#image-container {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+#image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+#description-container {
+    width: 50%;
+    padding-left: 20px;
+}
+
+#description-container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+#description-container p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+footer{
+    background-color:   #6c996f;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+
+}
+.menu_toggle {
+    display: none;
+}
+/*Responsive*/
+@media (max-width:682px) {
+    header {
+        padding: 0 10px;
+    }
+    header .menu {
+        display: none;
+    }
+    #home {
+        padding: 0 10px;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #home .left , #home .right {
+        width: 100%;
+    }
+    .right {
+        margin-top: 50px;
+        width: 60%;
+    }
+    .images li {
+        width: 100%;
+    }
+    .service {
+        width: 100%;
+    }
+    #contact {
+        height: auto;
+    }
+    .localisation_contact_div {
+        height: auto;
+        flex-direction: column;
+        width: 100%;
+    }
+    .localisation{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .localisation_contact_div .form_contact{
+        width: 100%;
+    }
+    .menu_toggle{
+       height: 50px;
+       width: 50px;
+       position: relative;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       cursor: pointer; 
+    }
+    .menu_toggle span {
+        width: 35px;
+        background-color:   #3C703F;
+        height: 5px;
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+    .menu_toggle span.active {
+        width: 0px;
+    }
+    .menu_toggle::before {
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 5px;
+        background-color:   #3C703F;
+        transform: translateY(10px);
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+    .menu_toggle::after{
+        position: absolute;
+        content: "";
+        width: 20px;
+        height: 5px;
+        background-color:   #3C703F;
+        transform: translateY(-10px);
+        border-radius: 6px;
+        transition: 0.5s;
+    }
+    header .menu.responsive {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        z-index: 2;
+        background-color: #ffffff;
+        border-top: 1px solid #ffffff;
+        border-bottom: #ffffff;
+    }
+
+}

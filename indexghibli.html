@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet NSI Voitures</title>
+    <link rel="stylesheet" href="stylees.css">
+<body>
+	<!--header-->
+    <header>
+        <!--menu responsive-->
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+        <div class="logo">
+            <p><span>ML</span>Motors</p>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html#home">Accueil</a></li>
+            <li><a href="index.html#cars">Vehicules</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <button class="login_btn">Se connecter</button>
+        <button class="Sing up_btn">S'inscrire</button>
+        <button id="mode-toggle">Mode sombre</button>
+        <script src="java.js"></script>
+    </header>
+
+	<section id="main">
+		<div id="image-container">
+			
+		
+        <span id="votre_id1" class="target">
+        </span>
+        <span id="votre_id2" class="target">
+        </span>
+        <span id="votre_id3" class="target">
+        </span>
+        <span id="votre_id4" class="target">
+        </span>
+        <div class="cadre_diapo">
+        <div class="interieur_diapo">
+        <div class=description>
+        <span>
+    
+        </span>
+        <img src="maserati-ghibli-trofeo-0-0f2fc-750x410.jpg" alt>
+        </div>
+        <div class=description>
+        <span>
+      
+        </span>
+        <img src="maserati-ghibli-trofeo-0-890af-750x410.jpg" alt>
+        </div>
+        <div class=description>
+        <span>
+        
+        </span>
+        <img src="maserati-ghibli-trofeo-0-c20bf-750x410.jpg" alt>
+        </div>
+        <div class=description>
+        <span>
+        
+        </span>
+        <img src="maserati-ghibli-trofeo-0-48ae6-750x410.jpg" alt>
+        </div>
+        </div>
+        <ul class="navigation_diapo">
+        <li>
+        <a href="#votre_id1">
+        <img src="maserati-ghibli-trofeo-0-0f2fc-750x410.jpg" alt>
+        </a>
+        </li>
+        <li>
+        <a href="#votre_id2">
+        <img src="maserati-ghibli-trofeo-0-890af-750x410.jpg" alt>
+        </a>
+        </li>
+        <li>
+        <a href="#votre_id3">
+        <img src="maserati-ghibli-trofeo-0-c20bf-750x410.jpg" alt>
+        </a>
+        </li>
+        <li>
+        <a href="#votre_id4">
+        <img src="maserati-ghibli-trofeo-0-48ae6-750x410.jpg" alt>
+        </a>
+        </li>
+        </ul>
+        </div>
+    </div>
+
+		<div id="description-container">
+			<h2>Description de la MASERATI GHIBLI</h2>
+			<p>Informations générales
+                <br>
+                <br>Prix: 86 000 €
+                <br>
+                <br>MASERATI GHIBLI III (2) 2.0 HYBRID 330 EXECUTIVE AUTO
+                <br>Caractéristiques
+                <br>Année :
+                2021
+                <br>Provenance :
+                France
+                <br>Mise en circulation :
+                24/12/2021
+                <br>Contrôle technique :
+                Non requis 
+                <br>Première main :
+                Non 
+                <br>Nombre de propriétaires :
+                1 
+                <br>Kilométrage compteur :5 660 km 
+                <br><br><br>Energie :
+                Essence
+                <br>Boite de vitesse :
+                Automatique
+                <br>Couleur :rouge
+                <br>Nombre de portes :
+                4
+                <br>Nombre de places :
+                5
+                <br>Longueur :
+                4,97 m
+                <br>Volume de coffre :
+                Grand coffre 
+                
+                500 L
+               
+                <br>Puissance du véhicule
+                <br>Puissance fiscale :
+                21 CV 
+                <br>Puissances :(DIN) 331 ch 
+                <br>Consommation
+                <br>Norme euro :
+                EURO6 
+                <br>Crit'Air :
+                1
+                 
+                <br>Consommation mixte :
+                8,2 L/100 km 
+                <br>Emission de CO2 :
+                E
+                <br>200 g/km
+    <script>
+        //menu responsive code JS
+            
+         var menu_toggle = document.querySelector('.menu_toggle');
+         var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+            
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive');
+            
+             }
+        </script>
+    </body>
+</html>

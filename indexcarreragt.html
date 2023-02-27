@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet NSI Voitures</title>
+    <link rel="stylesheet" href="stylees.css">
+<body>
+	<!--header-->
+    <header>
+        <!--menu responsive-->
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+        <div class="logo">
+            <p><span>ML</span>Motors</p>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html#home">Accueil</a></li>
+            <li><a href="index.html#cars">Vehicules</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <button class="login_btn">Se connecter</button>
+        <button class="Sing up_btn">S'inscrire</button>
+        <button id="mode-toggle">Mode sombre</button>
+        <script src="java.js"></script>
+    </header>
+
+	<section id="main">
+		<div id="image-container">
+			
+		
+        <span id="votre_id1" class="target">
+        </span>
+        <span id="votre_id2" class="target">
+        </span>
+        <span id="votre_id3" class="target">
+        </span>
+        <span id="votre_id4" class="target">
+        </span>
+        <div class="cadre_diapo">
+        <div class="interieur_diapo">
+        <div class=description>
+        <span>
+    
+        </span>
+        <img src="2004-porsche-carrera-gt-with-27-miles (1).jpg" alt>
+        </div>
+        <div class=description>
+        <span>
+      
+        </span>
+        <img src="2004-porsche-carrera-gt-with-27-miles (5).jpg" alt>
+        </div>
+        <div class=description>
+        <span>
+        
+        </span>
+        <img src="2004-porsche-carrera-gt-with-27-miles (4).jpg" alt>
+        </div>
+        <div class=description>
+        <span>
+        
+        </span>
+        <img src="2004-porsche-carrera-gt-with-27-miles (3).jpg" alt>
+        </div>
+        </div>
+        <ul class="navigation_diapo">
+        <li>
+        <a href="#votre_id1">
+        <img src="2004-porsche-carrera-gt-with-27-miles (1).jpg" alt>
+        </a>
+        </li>
+        <li>
+        <a href="#votre_id2">
+        <img src="2004-porsche-carrera-gt-with-27-miles (5).jpg" alt>
+        </a>
+        </li>
+        <li>
+        <a href="#votre_id3">
+        <img src="2004-porsche-carrera-gt-with-27-miles (4).jpg" alt>
+        </a>
+        </li>
+        <li>
+        <a href="#votre_id4">
+        <img src="2004-porsche-carrera-gt-with-27-miles (3).jpg" alt>
+        </a>
+        </li>
+        </ul>
+        </div>
+    </div>
+
+		<div id="description-container">
+			<h2>Description de la PORSCHE CARRERA GT</h2>
+			<p>Informations générales
+                <br>
+                <br>Prix: 3 200 000 €
+                <br>
+                <p>PORSCHE CARRERA GT
+                    <p>Caractéristiques
+                        <p>Année :
+                        2004
+                        <p>Provenance :
+                        France
+                        <p>Mise en circulation :
+                        15/10/2004
+                        <p>Contrôle technique :
+                        Requis 
+                        <p>Première main :
+                        Non 
+                        <p>Nombre de propriétaires :
+                        2 
+                        <p>Kilométrage compteur :26 400 km 
+                        <p>Energie :
+                        Essence
+                        <p>Boite de vitesse :
+                        Manuelle
+                        <p>Couleur :gris metalSellerie :cuir marron
+                        <p>Nombre de portes :
+                        2
+                        <p>Nombre de places :
+                        2
+                        <p>Longueur :
+                        4,61 m
+                        <p>Volume de coffre :
+                        Petit coffre 
+                        
+                        76 L
+                    
+                        <p>Puissance du véhicule
+                        <p>Puissance fiscale :
+                        58 CV 
+                        <p>Puissances :(DIN) 612 ch - (moteur) 450 kW 
+                        <p>Consommation
+                        <p>Norme euro :
+                        EURO4 
+                        <p>Crit'Air :
+                        2
+                         
+                        <p> Consommation mixte :
+                        17,8 L/100 km 
+                        <p>Emission de CO2 :
+                        G
+                        429 g/km
+            
+    <script>
+        //menu responsive code JS
+            
+         var menu_toggle = document.querySelector('.menu_toggle');
+         var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+            
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive');
+            
+             }
+        </script>
+    </body>
+</html>

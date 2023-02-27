@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet NSI Voitures</title>
+    <link rel="stylesheet" href="stylees.css">
+<body>
+	<!--header-->
+    <header>
+        <!--menu responsive-->
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+        <div class="logo">
+            <p><span>ML</span>Motors</p>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html#home">Accueil</a></li>
+            <li><a href="index.html#cars">Vehicules</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <button class="login_btn">Se connecter</button>
+        <button class="Sing up_btn">S'inscrire</button>
+        <button id="mode-toggle">Mode sombre</button>
+        <script src="java.js"></script>
+    </header>
+
+	<section id="main">
+		<div id="image-container">
+			
+		
+        <span id="votre_id1" class="target">
+        </span>
+        <span id="votre_id2" class="target">
+        </span>
+        <span id="votre_id3" class="target">
+        </span>
+        <span id="votre_id4" class="target">
+        </span>
+        <div class="cadre_diapo">
+        <div class="interieur_diapo">
+        <div class=description>
+        <span>
+    
+        </span>
+        <img src="2023-ford-gt-mk-iv (4).jpg" alt>
+        </div>
+        <div class=description>
+        <span>
+      
+        </span>
+        <img src="2023-ford-gt-mk-iv (5).jpg" alt>
+        </div>
+        <div class=description>
+        <span>
+        
+        </span>
+        <img src="2023-ford-gt-mk-iv (6).jpg" alt>
+        </div>
+        <div class=description>
+        <span>
+        
+        </span>
+        <img src="2023-ford-gt-mk-iv (7).jpg" alt>
+        </div>
+        </div>
+        <ul class="navigation_diapo">
+        <li>
+        <a href="#votre_id1">
+        <img src="2023-ford-gt-mk-iv (4).jpg" alt>
+        </a>
+        </li>
+        <li>
+        <a href="#votre_id2">
+        <img src="2023-ford-gt-mk-iv (5).jpg" alt>
+        </a>
+        </li>
+        <li>
+        <a href="#votre_id3">
+        <img src="2023-ford-gt-mk-iv (6).jpg" alt>
+        </a>
+        </li>
+        <li>
+        <a href="#votre_id4">
+        <img src="2023-ford-gt-mk-iv (7).jpg" alt>
+        </a>
+        </li>
+        </ul>
+        </div>
+    </div>
+
+		<div id="description-container">
+			<h2>Description de la FORD GT</h2>
+            <br>
+                <br>Prix: Nous contacter
+                <br>
+			<p>Year of manufacture :
+                2020
+                <br>Mileage :
+                1 000 km / 622 mi
+                <br>Car type :
+                Coupé
+                <br>Chassis number :
+                VS1466
+                <br>Competition car :
+                Yes
+                <br>FIA Papers :
+                Yes
+                <br>Drive :
+                RHD
+                <br>Condition :
+                Original Condition
+                <br>Interior colour: 
+                Black
+                <br>Interior type :
+                Leather
+                <br>Number of doors :
+                2
+                <br>Number of seats :
+                2
+                <br>Location:
+                United Kingdom
+                <br>Exterior colour :
+                Red
+                <br>Gearbox :
+                Manual
+                <br>Drivetrain :
+                2wd
+                <br>Fuel type: 
+                Petrol
+            
+    <script>
+        //menu responsive code JS
+            
+         var menu_toggle = document.querySelector('.menu_toggle');
+         var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+            
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive');
+            
+             }
+        </script>
+    </body>
+</html>

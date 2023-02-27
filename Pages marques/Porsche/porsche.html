@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="porsche.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-jVe2Q…">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nom-de-la-police">
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Apgpts9VGv3LGRsDBNx8C09jmL6C_DISECEQBogAnpaZjlLlJb3zzFA7bW9-iTw_'></script>
+    <script type="text/javascript" src="js/map_porsche.js"></script>
+    <script type="text/javascript" src="js/fleche.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+</head>
+<body onload="loadMap();">
+    <header>
+        <div class="home">
+            <img src="svg/house-solid.svg" alt="maison" class="home-icon">
+        </div>
+        <div class="logo">
+            <img src="img/logo/porsche.png" alt="logo porsche" class="logo">
+        </div>
+        <div class="titre">
+            <h1>Porsche</h1>
+        </div>
+    </header>
+    <hr>
+    <section class="map">
+        <h2 class="title_1">Nos concessionnaires affiliés :</h2>
+        <div id="map"></div>
+        <div class="scroll-down-arrow">
+            <i class="fa fa-chevron-down"></i>
+        </div>
+    </section>
+    <section class="modèles">
+        <h2 class="title_2"> Modèles :</h2>
+        <div class="search-container">
+            <form action="#" method="get" class="search-form">
+              <input type="text" id="search-box" placeholder="Rechercher un modèle ...">
+              <button onclick="search()" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div id="911 GT3" onclick= " redirigerVersPagegt3() " class="car">
+            <div class="img">
+                <img src="img/voitures/911 gt3.jpg" alt="photo 911 GT3">
+            </div>
+            <div class="infos">
+               <h2>911 GT3</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 375 kW (510 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 3,4 secondes</li>
+                <li>Vitesse maximale : environ 320 km/h</li>
+                <li>Moteur : Flat-six atmosphérique de 4,0 litres</li>
+                <li>Nombre de places : 2</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagegt3() {
+              window.location.href = "../../index911gt3.html";
+            }
+        </script>
+        <div id="Cayenne" onclick= " redirigerVersPagecayenne() " class="car">
+            <div class="img">
+                <img src="img/voitures/Cayenne.jpg" alt="photo 718 Cayman">
+            </div>
+            <div class="infos">
+               <h2>Cayenne</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : De 250 kW (340 ch) à 680 kW (680 ch) selon la version</li>
+                <li>Accélération : 0 à 100 km/h en 2,8 à 7,3 secondes selon la version</li>
+                <li>Vitesse maximale : De 230 km/h à 300 km/h selon la version</li>
+                <li>Moteur : V6, V8, V8 biturbo, ou hybrid</li>
+                <li>Nombre de places : 5</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagecayenne() {
+              window.location.href = "../../indexcayenne.html";
+            }
+        </script>
+        <div id="Carrera 4S" onclick= " redirigerVersPage4s() " class="car">
+            <div class="img">
+                <img src="img/voitures/carrera 4s.jpg" alt="photo carrera 4s">
+            </div>
+            <div class="infos">
+               <h2>Carrera 4S</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 331 kW (450 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 3,6 secondes (avec le pack Sport Chrono)</li>
+                <li>Vitesse maximale : environ 308 km/h</li>
+                <li>Moteur : Flat-six biturbo de 3,0 litres</li>
+                <li>Nombre de places : 2</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPage4s() {
+              window.location.href = "../../index911.html";
+            }
+        </script>
+        <div id="Panamera" onclick= " redirigerVersPagepanamera() " class="car">
+            <div class="img">
+                <img src="img/voitures/Panamera.jpg" alt="photo 718 Cayman">
+            </div>
+            <div class="infos">
+               <h2>Panamera</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : De 243 kW (330 ch) à 463 kW (630 ch) selon la version</li>
+                <li>Accélération : De 0 à 100 km/h en 4,2 à 3,1 secondes selon la version</li>
+                <li>Vitesse maximale : De 263 km/h à 315 km/h selon la version</li>
+                <li>Moteur :  V6, V8, V8 biturbo, ou hybride</li>
+                <li>Nombre de places : 4 ou 5</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagepanamera() {
+              window.location.href = "../../indexpanamera.html";
+            }
+        </script>
+        <div id="Carrera GT" onclick= " redirigerVersPagegt() " class="car">
+            <div class="img">
+                <img src="img/voitures/carrera gt.jpg" alt="photo Carrera gt">
+            </div>
+            <div class="infos">
+               <h2>Carrera GT</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 450 kW (612 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 3,9 secondes</li>
+                <li>Vitesse maximale : environ 330 km/h</li>
+                <li>Moteur : V10 atmosphérique de 5,7 litres</li>
+                <li>Nombre de places : 2</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagegt() {
+              window.location.href = "../../indexcarreragt.html";
+            }
+        </script>
+    </section>
+</body>
+</html>

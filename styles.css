@@ -1,0 +1,146 @@
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7em;
+    scroll-behavior: smooth;
+    background-color: rgb(248, 248, 255);
+}
+body {
+    position: relative;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8%;
+    height: 50px;
+    
+}
+header .logo {
+    color: blue;
+    font-size: 25px;
+    font-weight: bold;   
+}
+body {
+    background-color: #ffffff; /* Couleur de fond par défaut */
+    color: #000000; /* Couleur de texte par défaut */
+
+  }
+  
+  body.dark-mode {
+    background-color: #222222; /* Couleur de fond en mode sombre */
+    color: #ffffff; /* Couleur de texte en mode sombre */
+    
+  }
+  
+  #mode-toggle {
+    background-color: #ffffff; /* Couleur de fond du bouton par défaut */
+    color: #000000; /* Couleur de texte du bouton par défaut */
+    border: 1px solid #000000; /* Bordure du bouton par défaut */
+    padding: 10px; /* Espacement interne du bouton */
+    
+  }
+  
+  #mode-toggle.dark-mode {
+    background-color: #222222; /* Couleur de fond du bouton en mode sombre */
+    color: #ffffff; /* Couleur de texte du bouton en mode sombre */
+    border: 1px solid #ffffff; /* Bordure du bouton en mode sombre */
+    
+  }
+  
+header .logo span {
+    color: black;
+}
+.menu {
+    display: flex;
+}
+.menu li {
+    list-style: none;
+    margin: 0 15px;
+}
+.menu li a {
+    font-size: 14px;
+    color: black;
+    font-weight: 300;
+    transition: 0.2s;
+}
+.menu li a:hover {
+    color: blue;
+}
+header button {
+    background-color: blue;
+    cursor: pointer;
+    color: #fff;
+    padding: 5px 20px;
+    position: relative;
+    align-items: left;
+    padding: 10px 10px;
+    
+}
+
+#home {
+    margin-top: 50px;
+    height: calc(100vh - 50px);
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+/*Scrollbar CSS*/
+
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgb(255, 255, 255);
+}
+::-webkit-scrollbar-thumb {
+    background-color: blue;
+}
+
+#home .left {
+    width: 40%;
+}
+
+#home .left h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+#home .left h1 span {
+    color: rgb(0, 0, 0);
+}
+#home .left p {
+    margin-bottom: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+#home .left a {
+    background-color: blue;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #ffffff;
+    transition: 0.5s;    
+}
+#home .left a:hover {
+    background-color: rgb(0, 0, 0);   
+}
+#home .right {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#home .right img {
+    width: 100%;
+}
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

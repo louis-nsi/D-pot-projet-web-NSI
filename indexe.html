@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet NSI Voitures</title>
+    <link rel="stylesheet" href="stylees.css">
+<body>
+	<!--header-->
+    <header>
+        <!--menu responsive-->
+        <div class="menu_toggle">
+            <span></span>
+        </div>
+        <div class="logo">
+            <p><span>ML</span>Motors</p>
+        </div>
+        <ul class="menu">
+            <li><a href="index.html#home">Accueil</a></li>
+            <li><a href="index.html#cars">Vehicules</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <button class="login_btn">Se connecter</button>
+        <button class="Sing up_btn">S'inscrire</button>
+        <button id="mode-toggle">Mode sombre</button>
+        <script src="java.js"></script>
+    </header>
+
+	<section id="main">
+		<div id="image-container">
+			<img src="iris (1).jpg" alt="Image de voiture">
+		</div>
+
+		<div id="description-container">
+			<h2>Description de la nouvelle Porsche 911</h2>
+			<p>Informations générales
+                <p>AUDI RS5 (2) 4.2 V8 FSI 450
+                    <p>Caractéristiques
+                        <p>Année :
+                            2014
+                                <p>Provenance :
+                                    France
+                                        <p>Mise en circulation :
+                                            04/12/2014
+                                                <p>Contrôle technique :
+                                                    Requis 
+                                                        <p>Première main :
+                                                            Oui 
+                                                                <p>Kilométrage compteur :56 000 km 
+                                                                    <p>Energie :
+                                                                        Essence
+                                                                            <p>Boite de vitesse :
+                                                                                Automatique
+                                                                                    <p>Couleur :gris metalSellerie :cuir noir
+                                                                                        <p>Nombre de portes :
+                                                                                            2
+                                                                                                <p>Nombre de places :
+                                                                                                    4
+                                                                                                        <p>Longueur :
+                                                                                                            4,65 m
+                                                                                                                <p>Volume de coffre :
+                                                                                                                    Grand coffre 
+                
+                                                                                                                        455 L
+                                                                                                                            100 L
+                                                                                                                                630 L
+                                                                                                                                    <p>Puissance du véhicule
+                                                                                                                                        <p>Puissance fiscale :
+                                                                                                                                            35 CV 
+                                                                                                                                                <p>Puissances :(DIN) 450 ch - (moteur) 331 kW 
+                                                                                                                                                    <p>Consommation
+                                                                                                                                                        <p>Norme euro :
+                                                                                                                                                            <p>EURO5 
+                                                                                                                                                                <p>Crit'Air :
+                                                                                                                                                                    1
+                 
+                                                                                                                                                                        <p>Consommation mixte :
+                                                                                                                                                                            10,5 L/100 km 
+                                                                                                                                                                                <p>Emission de CO2 :
+                                                                                                                                                                                    F
+                                                                                                                                                                                        246 g/km
+    
+            
+    <script>
+        //menu responsive code JS
+            
+         var menu_toggle = document.querySelector('.menu_toggle');
+         var menu = document.querySelector('.menu');
+        var menu_toggle_span = document.querySelector('.menu_toggle span');
+            
+        menu_toggle.onclick = function(){
+            menu_toggle.classList.toggle('active');
+            menu_toggle_span.classList.toggle('active');
+            menu.classList.toggle('responsive');
+            
+             }
+        </script>
+    </body>
+</html>

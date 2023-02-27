@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="porsche.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-jVe2Q…">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nom-de-la-police">
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Apgpts9VGv3LGRsDBNx8C09jmL6C_DISECEQBogAnpaZjlLlJb3zzFA7bW9-iTw_'></script>
+    <script type="text/javascript" src="js/map_porsche.js"></script>
+    <script type="text/javascript" src="js/fleche.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+</head>
+<body onload="loadMap();">
+    <header>
+        <div class="logo">
+            <img src="img/logo/logo_astonmartin.png" alt="logo mclaren" class="logo">
+        </div>
+    </header>
+    <hr>
+    <section class="map">
+        <h2 class="title_1">Nos concessionnaires affiliés :</h2>
+        <div id="map"></div>
+        <div class="scroll-down-arrow">
+            <i class="fa fa-chevron-down"></i>
+        </div>
+    </section>
+    <section class="modèles">
+        <h2 class="title_2"> Modèles :</h2>
+        <div class="search-container">
+            <form action="#" method="get" class="search-form">
+              <input type="text" id="search-box" placeholder="Rechercher un modèle ...">
+              <button onclick="search()" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div id="DB11" onclick= " redirigerVersPagedb11() " class="car">
+            <div class="img">
+           
+                    <img src="img/voitures/db11.jpg" alt="">
+          
+            </div>
+            <div class="infos">
+               <h2>DB11</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : jusqu'à 447 kW (608 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 3,9 secondes</li>
+                <li>Vitesse maximale : environ 335 km/h</li>
+                <li>Moteur : V8 biturbo de 4,0 litres ou V12 biturbo de 5,2 litres</li>
+                <li>Nombre de places : 2+2 (2 places à l'avant et 2 places plus petites à l'arrière)</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagedb11() {
+              window.location.href = "../../indexdb11.html";
+            }
+        </script>
+        <div id="DBX" onclick= " redirigerVersPagedbx() " class="car">
+            <div class="img">
+      
+                    <img src="img/voitures/dbx.jpg" alt="">
+   
+            </div>
+            <div class="infos">
+               <h2>DBX</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 405 kW (550 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 4,5 secondes</li>
+                <li>Vitesse maximale : environ 291 km/h</li>
+                <li>Moteur : V8 biturbo de 4,0 litres</li>
+                <li>Nombre de places : 5</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagedbx() {
+              window.location.href = "../../indexdbx.html";
+            }
+        </script>
+        <div id="Vantage" onclick= " redirigerVersPagevantage() " class="car">
+            <div class="img">
+          
+                    <img src="img/voitures/vantage.jpg" alt="">
+              
+            </div>
+            <div class="infos">
+               <h2>Vantage</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 386 kW (525 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 3,6 secondes</li>
+                <li>Vitesse maximale : environ 314 km/h</li>
+                <li>Moteur : V8 biturbo de 4,0 litres</li>
+                <li>Nombre de places : 2</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagevantage() {
+              window.location.href = "../../indexvantage.html";
+            }
+        </script>
+        <div id="DB5" onclick= " redirigerVersPagedb5() " class="car">
+            <div class="img">
+          
+                    <img src="img/voitures/db5.png" alt="">
+    
+            </div>
+            <div class="infos">
+               <h2>DB5</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 210 kW (282 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 8,0 secondes</li>
+                <li>Vitesse maximale : environ 230 km/h</li>
+                <li>Moteur : 6 cylindres en ligne de 4,0 litres</li>
+                <li>Nombre de places : 2</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagedb5() {
+              window.location.href = "../../indexdb5.html";
+            }
+        </script>
+    </section>
+</body>
+</html>

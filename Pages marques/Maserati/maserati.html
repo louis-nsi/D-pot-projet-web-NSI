@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="porsche.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-jVe2Q…">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nom-de-la-police">
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Apgpts9VGv3LGRsDBNx8C09jmL6C_DISECEQBogAnpaZjlLlJb3zzFA7bW9-iTw_'></script>
+    <script type="text/javascript" src="js/map_porsche.js"></script>
+    <script type="text/javascript" src="js/fleche.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+</head>
+<body onload="loadMap();">
+    <header>
+        <div class="logo">
+            <img src="img/logo/logo_maserati.png" alt="logo maserati" class="logo">
+        </div>
+        <div class="titre">
+            <h1>Maserati</h1>
+        </div>
+    </header>
+    <hr>
+    <section class="map">
+        <h2 class="title_1">Nos concessionnaires affiliés :</h2>
+        <div id="map"></div>
+        <div class="scroll-down-arrow">
+            <i class="fa fa-chevron-down"></i>
+        </div>
+    </section>
+    <section class="modèles">
+        <h2 class="title_2"> Modèles :</h2>
+        <div class="search-container">
+            <form action="#" method="get" class="search-form">
+              <input type="text" id="search-box" placeholder="Rechercher un modèle ...">
+              <button onclick="search()" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div id="MC20" onclick= " redirigerVersPagemc20() " class="car">
+            <div class="img">
+                
+                
+                    <img src="img/voitures/mc20.jpg" alt="">
+                  
+                
+            </div>
+            <div class="infos">
+               <h2>MC20</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 463 kW (630 ch)</li>
+                <li>Accélération : 0 à 100 km/h en moins de 2,9 secondes</li>
+                <li>Vitesse maximale : environ 325 km/h</li>
+                <li>Moteur : V6 biturbo de 3,0 litres</li>
+                <li>Nombre de places : 2</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagemc20() {
+              window.location.href = "../../indexmc20.html";
+            }
+        </script>
+        <div id="Quattroporte" onclick= " redirigerVersPagequattro() " class="car">
+            <div class="img">
+                <img src="img/voitures/quattroporte.jpg" alt="">
+            </div>
+            <div class="infos">
+               <h2>Quattroporte</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 433 kW (590 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 4,5 secondes</li>
+                <li>Vitesse maximale : environ 326 km/h</li>
+                <li>Moteur : V8 biturbo de 3,8 litres</li>
+                <li>Nombre de places : 5</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagequattro() {
+              window.location.href = "../../indexquattroprte.html";
+            }
+        </script>
+        <div id="Ghibli" onclick= " redirigerVersPageghibli() " class="car">
+            <div class="img">
+                
+                    <img src="img/voitures/ghibli.jpg" alt="">
+                
+              
+            </div>
+            <div class="infos">
+               <h2>Ghibli</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : jusqu'à 353 kW (480 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 4,0 secondes</li>
+                <li>Vitesse maximale : environ 326 km/h</li>
+                <li>Moteur : V8 biturbo de 3,8 litres</li>
+                <li>Nombre de places : 5</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPageghibli() {
+              window.location.href = "../../indexghibli.html";
+            }
+        </script>
+    </section>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="porsche.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-jVe2Q…">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nom-de-la-police">
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Apgpts9VGv3LGRsDBNx8C09jmL6C_DISECEQBogAnpaZjlLlJb3zzFA7bW9-iTw_'></script>
+    <script type="text/javascript" src="js/map_porsche.js"></script>
+    <script type="text/javascript" src="js/fleche.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+</head>
+<body onload="loadMap();">
+    <header>
+        <div class="logo">
+            <img src="img/logo/logo_ford.png" alt="logo jaguar" class="logo">
+        </div>
+    </header>
+    <hr>
+    <section class="map">
+        <h2 class="title_1">Nos concessionnaires affiliés :</h2>
+        <div id="map"></div>
+        <div class="scroll-down-arrow">
+            <i class="fa fa-chevron-down"></i>
+        </div>
+    </section>
+    <section class="modèles">
+        <h2 class="title_2"> Modèles :</h2>
+        <div class="search-container">
+            <form action="#" method="get" class="search-form">
+              <input type="text" id="search-box" placeholder="Rechercher un modèle ...">
+              <button onclick="search()" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div id="mustang mach 1" onclick= " redirigerVersPagemach() " class="car">
+            <div class="img">
+               
+                    <img src="img/voitures/ford-mustang-mach1_010.jpg" alt="">
+                  
+            </div>
+            <div class="infos">
+               <h2>Mustang Mach 1</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 358 kW (480 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 4,4 secondes</li>
+                <li>Vitesse maximale : environ 250 km/h</li>
+                <li>Moteur : V8 de 5,0 litres</li>
+                <li>Nombre de places : 4</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagemach() {
+              window.location.href = "../../indexmustang.html";
+            }
+        </script>
+        <div id="GT40" onclick= " redirigerVersPagegt40() " class="car">
+            <div class="img">
+                <img src="img/voitures/gt40.jpeg" alt="photo GT40">
+            </div>
+            <div class="infos">
+               <h2>GT40</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 335 kW (450 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 4,2 secondes</li>
+                <li>Vitesse maximale : environ 335 km/h</li>
+                <li>Moteur : V8 de 4,7 litres</li>
+                <li>Nombre de places : 2</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagegt40() {
+              window.location.href = "../../indexgt40.html";
+            }
+        </script>
+        <div id="Ford GT Mk IV" onclick= " redirigerVersPagegtmk4() " class="car">
+            <div class="img">
+                <img src="img/voitures/gt mk IV.png" alt="photo Ford GT Mk IV">
+            </div>
+            <div class="infos">
+               <h2>Ford GT Mk IV</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 410 kW (600 ch)</li>
+                <li>Accélération : 0 à 100 km/h en environ 4 secondes</li>
+                <li>Vitesse maximale : environ 320 km/h</li>
+                <li>Moteur : V8 de 7,0 litres</li>
+                <li>Nombre de places : 2</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagegtmk4() {
+              window.location.href = "../../indexfordgtmk4.html";
+            }
+        </script>
+    </section>
+</body>
+</html>

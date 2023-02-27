@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="porsche.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-jVe2Q…">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nom-de-la-police">
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Apgpts9VGv3LGRsDBNx8C09jmL6C_DISECEQBogAnpaZjlLlJb3zzFA7bW9-iTw_'></script>
+    <script type="text/javascript" src="js/map_porsche.js"></script>
+    <script type="text/javascript" src="js/fleche.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+</head>
+<body onload="loadMap();">
+    <header>
+        <div class="logo">
+            <img src="img/logo/logo_jaguar.png" alt="logo jaguar" class="logo">
+        </div>
+    </header>
+    <hr>
+    <section class="map">
+        <h2 class="title_1">Nos concessionnaires affiliés :</h2>
+        <div id="map"></div>
+        <div class="scroll-down-arrow">
+            <i class="fa fa-chevron-down"></i>
+        </div>
+    </section>
+    <section class="modèles">
+        <h2 class="title_2"> Modèles :</h2>
+        <div class="search-container">
+            <form action="#" method="get" class="search-form">
+              <input type="text" id="search-box" placeholder="Rechercher un modèle ...">
+              <button onclick="search()" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div id="F-TYPE" onclick= " redirigerVersPageftype() " class="car">
+            <div class="img">
+                <img src="img/voitures/f-type.jpeg" alt="photo F-TYPE">
+            </div>
+            <div class="infos">
+               <h2>F-TYPE</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 423 kW (575 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 3,5 secondes</li>
+                <li>Vitesse maximale : environ 300 km/h</li>
+                <li>Moteur : V8 de 5,0 litres</li>
+                <li>Nombre de places : 2</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPageftype() {
+              window.location.href = "../../indexf-type.html";
+            }
+        </script>
+        <div id="E-PACE" onclick= " redirigerVersPageepace() " class="car">
+            <div class="img">
+                <img src="img/voitures/e-pace.jpg" alt="photo E-PACE">
+            </div>
+            <div class="infos">
+               <h2>E-PACE</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 221 kW (300 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 6,7 secondes</li>
+                <li>Vitesse maximale : environ 243 km/h</li>
+                <li>Moteur : moteur essence quatre cylindres de 2,0 litres</li>
+                <li>Nombre de places : 5</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPageepace() {
+              window.location.href = "../../indexe-pace.html";
+            }
+        </script>
+        <div id="XK140" onclick= " redirigerVersPagexk140() " class="car">
+            <div class="img">
+                <img src="img/voitures/XK140 MC Roadster.png" alt="photo XK140 MC Roadster">
+            </div>
+            <div class="infos">
+               <h2>XK140 MC Roadster</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 142 kW (190 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 10,2 secondes</li>
+                <li>Vitesse maximale : environ 190 km/h</li>
+                <li>Moteur : moteur essence six cylindres de 3,4 litres</li>
+                <li>Nombre de places : 2</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagexk140() {
+              window.location.href = "../../indexXK140Mc.html";
+            }
+        </script>
+    </section>
+</body>
+</html>

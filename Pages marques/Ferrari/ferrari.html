@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="porsche.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-jVe2Q…">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nom-de-la-police">
+    <script type='text/javascript' src='https://www.bing.com/api/maps/mapcontrol?key=Apgpts9VGv3LGRsDBNx8C09jmL6C_DISECEQBogAnpaZjlLlJb3zzFA7bW9-iTw_'></script>
+    <script type="text/javascript" src="js/map_porsche.js"></script>
+    <script type="text/javascript" src="js/fleche.js"></script>
+    <script type="text/javascript" src="js/search.js"></script>
+</head>
+<body onload="loadMap();">
+    <header>
+        <div class="logo">
+            <img src="img/logo/logo_ferrari.png" alt="logo ferrari" class="logo">
+        </div>
+        <div class="titre">
+            <h1>Ferrari</h1>
+        </div>
+    </header>
+    <hr>
+    <section class="map">
+        <h2 class="title_1">Nos concessionnaires affiliés :</h2>
+        <div id="map"></div>
+        <div class="scroll-down-arrow">
+            <i class="fa fa-chevron-down"></i>
+        </div>
+    </section>
+    <section class="modèles">
+        <h2 class="title_2"> Modèles :</h2>
+        <div class="search-container">
+            <form action="#" method="get" class="search-form">
+              <input type="text" id="search-box" placeholder="Rechercher un modèle ...">
+              <button onclick="search()" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div id="Pista" onclick= " redirigerVersPagepista() " class="car">
+            <div class="img">
+                
+                    <img src="img/voitures/pista.jpg" alt="">
+                 
+            </div>
+            <div class="infos">
+               <h2>Pista</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 530 kW (720 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 2,85 secondes</li>
+                <li>Vitesse maximale : environ 340 km/h</li>
+                <li>Moteur : V8 biturbo de 3,9 litres</li>
+                <li>Nombre de places : 2</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagepista() {
+              window.location.href = "../../indexpista488.html";
+            }
+        </script>
+        <div id="Roma" onclick= " redirigerVersPageroma() " class="car">
+            <div class="img">
+             
+                    <img src="img/voitures/roma.png" alt="">
+                
+            </div>
+            <div class="infos">
+               <h2>Roma</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 456 kW (620 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 3,4 secondes</li>
+                <li>Vitesse maximale : environ 320 km/h</li>
+                <li>Moteur : V8 biturbo de 3,9 litres</li>
+                <li>Nombre de places : 4</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPageroma() {
+              window.location.href = "../../indexroma.html";
+            }
+        </script>
+        <div id="F40" onclick= " redirigerVersPagef40() " class="car">
+            <div class="img">
+           
+                    <img src="img/voitures/f40.jpg" alt="">
+                 
+            </div>
+            <div class="infos">
+               <h2>F40</h2>
+               <ul>
+                <li>Puissance (kW)/Puissance (ch) : 352 kW (478 ch)</li>
+                <li>Accélération : 0 à 100 km/h en 4,1 secondes</li>
+                <li>Vitesse maximale : environ 324 km/h</li>
+                <li>Moteur : V8 biturbo de 2,9 litres</li>
+                <li>Nombre de places : 2</li>
+               </ul>
+            </div>
+        </div>
+        <script>
+            function redirigerVersPagef40() {
+              window.location.href = "../../indexf40.html";
+            }
+        </script>
+    </section>
+</body>
+</html>
